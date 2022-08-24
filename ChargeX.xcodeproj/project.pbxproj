@@ -14,6 +14,7 @@
 		BB2D8E9D28B6815D00BE3122 /* ChargeXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8E9C28B6815D00BE3122 /* ChargeXTests.swift */; };
 		BB2D8EA728B6815D00BE3122 /* ChargeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EA628B6815D00BE3122 /* ChargeXUITests.swift */; };
 		BB2D8EA928B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EA828B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift */; };
+		BB2D8EB828B6829A00BE3122 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EB728B6829A00BE3122 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BB2D8EA228B6815D00BE3122 /* ChargeXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2D8EA628B6815D00BE3122 /* ChargeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeXUITests.swift; sourceTree = "<group>"; };
 		BB2D8EA828B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB2D8EB728B6829A00BE3122 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2D8E8B28B6815B00BE3122 /* ChargeXApp.swift */,
-				BB2D8E8D28B6815B00BE3122 /* ContentView.swift */,
+				BB2D8EB528B6827C00BE3122 /* Views */,
 				BB2D8E8F28B6815C00BE3122 /* Assets.xcassets */,
 				BB2D8E9128B6815C00BE3122 /* Preview Content */,
 			);
@@ -125,6 +127,23 @@
 				BB2D8EA828B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift */,
 			);
 			path = ChargeXUITests;
+			sourceTree = "<group>";
+		};
+		BB2D8EB528B6827C00BE3122 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8E8D28B6815B00BE3122 /* ContentView.swift */,
+				BB2D8EB628B6828A00BE3122 /* Map */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB2D8EB628B6828A00BE3122 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8EB728B6829A00BE3122 /* MapView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2D8E8E28B6815B00BE3122 /* ContentView.swift in Sources */,
+				BB2D8EB828B6829A00BE3122 /* MapView.swift in Sources */,
 				BB2D8E8C28B6815B00BE3122 /* ChargeXApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
