@@ -15,6 +15,11 @@
 		BB2D8EA728B6815D00BE3122 /* ChargeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EA628B6815D00BE3122 /* ChargeXUITests.swift */; };
 		BB2D8EA928B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EA828B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift */; };
 		BB2D8EB828B6829A00BE3122 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EB728B6829A00BE3122 /* MapView.swift */; };
+		BB2D8EC828B6C58F00BE3122 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8EC728B6C58F00BE3122 /* MapViewModel.swift */; };
+		BB2D8ECB28B6C72C00BE3122 /* ChargingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ECA28B6C72C00BE3122 /* ChargingPoint.swift */; };
+		BB2D8ECE28B6C84E00BE3122 /* OpenChargeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ECD28B6C84E00BE3122 /* OpenChargeAPI.swift */; };
+		BB2D8ED028B7B4AD00BE3122 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ECF28B7B4AD00BE3122 /* MapViewModelTests.swift */; };
+		BB2D8ED328B7BB0500BE3122 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ED228B7BB0500BE3122 /* XCTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		BB2D8EA628B6815D00BE3122 /* ChargeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeXUITests.swift; sourceTree = "<group>"; };
 		BB2D8EA828B6815D00BE3122 /* ChargeXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BB2D8EB728B6829A00BE3122 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BB2D8EC728B6C58F00BE3122 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		BB2D8ECA28B6C72C00BE3122 /* ChargingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingPoint.swift; sourceTree = "<group>"; };
+		BB2D8ECD28B6C84E00BE3122 /* OpenChargeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChargeAPI.swift; sourceTree = "<group>"; };
+		BB2D8ECF28B7B4AD00BE3122 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
+		BB2D8ED228B7BB0500BE3122 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,9 @@
 			children = (
 				BB2D8E8B28B6815B00BE3122 /* ChargeXApp.swift */,
 				BB2D8EB528B6827C00BE3122 /* Views */,
+				BB2D8EC528B6C55700BE3122 /* ViewModel */,
+				BB2D8EC928B6C72000BE3122 /* Model */,
+				BB2D8ECC28B6C82400BE3122 /* API */,
 				BB2D8E8F28B6815C00BE3122 /* Assets.xcassets */,
 				BB2D8E9128B6815C00BE3122 /* Preview Content */,
 			);
@@ -115,7 +128,9 @@
 		BB2D8E9B28B6815D00BE3122 /* ChargeXTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB2D8ED128B7BAED00BE3122 /* Extensions */,
 				BB2D8E9C28B6815D00BE3122 /* ChargeXTests.swift */,
+				BB2D8ECF28B7B4AD00BE3122 /* MapViewModelTests.swift */,
 			);
 			path = ChargeXTests;
 			sourceTree = "<group>";
@@ -144,6 +159,46 @@
 				BB2D8EB728B6829A00BE3122 /* MapView.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		BB2D8EC528B6C55700BE3122 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8EC628B6C57000BE3122 /* Map */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB2D8EC628B6C57000BE3122 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8EC728B6C58F00BE3122 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		BB2D8EC928B6C72000BE3122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8ECA28B6C72C00BE3122 /* ChargingPoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB2D8ECC28B6C82400BE3122 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8ECD28B6C84E00BE3122 /* OpenChargeAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BB2D8ED128B7BAED00BE3122 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8ED228B7BB0500BE3122 /* XCTestCase.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +333,10 @@
 			files = (
 				BB2D8E8E28B6815B00BE3122 /* ContentView.swift in Sources */,
 				BB2D8EB828B6829A00BE3122 /* MapView.swift in Sources */,
+				BB2D8ECB28B6C72C00BE3122 /* ChargingPoint.swift in Sources */,
 				BB2D8E8C28B6815B00BE3122 /* ChargeXApp.swift in Sources */,
+				BB2D8ECE28B6C84E00BE3122 /* OpenChargeAPI.swift in Sources */,
+				BB2D8EC828B6C58F00BE3122 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2D8E9D28B6815D00BE3122 /* ChargeXTests.swift in Sources */,
+				BB2D8ED328B7BB0500BE3122 /* XCTestCase.swift in Sources */,
+				BB2D8ED028B7B4AD00BE3122 /* MapViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +504,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +533,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
