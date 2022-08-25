@@ -20,6 +20,7 @@
 		BB2D8ECE28B6C84E00BE3122 /* OpenChargeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ECD28B6C84E00BE3122 /* OpenChargeAPI.swift */; };
 		BB2D8ED028B7B4AD00BE3122 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ECF28B7B4AD00BE3122 /* MapViewModelTests.swift */; };
 		BB2D8ED328B7BB0500BE3122 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ED228B7BB0500BE3122 /* XCTestCase.swift */; };
+		BB2D8ED628B7D4FD00BE3122 /* ChargePointDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D8ED528B7D4FD00BE3122 /* ChargePointDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BB2D8ECD28B6C84E00BE3122 /* OpenChargeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChargeAPI.swift; sourceTree = "<group>"; };
 		BB2D8ECF28B7B4AD00BE3122 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
 		BB2D8ED228B7BB0500BE3122 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		BB2D8ED528B7D4FD00BE3122 /* ChargePointDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargePointDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		BB2D8EB528B6827C00BE3122 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB2D8ED428B7D4EA00BE3122 /* ChargePointDetail */,
 				BB2D8E8D28B6815B00BE3122 /* ContentView.swift */,
 				BB2D8EB628B6828A00BE3122 /* Map */,
 			);
@@ -199,6 +202,14 @@
 				BB2D8ED228B7BB0500BE3122 /* XCTestCase.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB2D8ED428B7D4EA00BE3122 /* ChargePointDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D8ED528B7D4FD00BE3122 /* ChargePointDetailView.swift */,
+			);
+			path = ChargePointDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 				BB2D8EB828B6829A00BE3122 /* MapView.swift in Sources */,
 				BB2D8ECB28B6C72C00BE3122 /* ChargingPoint.swift in Sources */,
 				BB2D8E8C28B6815B00BE3122 /* ChargeXApp.swift in Sources */,
+				BB2D8ED628B7D4FD00BE3122 /* ChargePointDetailView.swift in Sources */,
 				BB2D8ECE28B6C84E00BE3122 /* OpenChargeAPI.swift in Sources */,
 				BB2D8EC828B6C58F00BE3122 /* MapViewModel.swift in Sources */,
 			);

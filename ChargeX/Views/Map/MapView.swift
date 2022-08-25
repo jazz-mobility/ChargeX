@@ -20,8 +20,24 @@ struct MapView: View {
     @ObservedObject var viewModel = MapViewModel()
 
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: viewModel.chargingPoints) {
-            MapMarker(coordinate: $0.coordinate)
+        NavigationView {
+            Map(
+                coordinateRegion: $region,
+                annotationItems: viewModel.chargingPoints
+            ) { place in
+                MapAnnotation(coordinate: place.coordinate) {
+                    NavigationLink {
+                        ChargePointDetailView(point: place)
+                    } label: {
+                        Image(systemName: "bolt.car.circle.fill")
+                            .resizable()
+                            .foregroundColor(.primary)
+                            .frame(width: 35, height: 35)
+                            .clipShape(Circle())
+                    }
+                }
+            }
+            .ignoresSafeArea()
         }
         .onReceive(timer, perform: { _ in
             viewModel.getChargingPoints(for: region.center)
